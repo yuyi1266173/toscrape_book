@@ -2,7 +2,11 @@
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 
-from ..items import BookItem
+import sys
+
+sys.path.append('D:/Python3/workPlace/GitWorkPlace/toscrapy_book/toscrapy_book')
+
+from items import BookItem
 
 
 class BooksSpider(scrapy.Spider):
