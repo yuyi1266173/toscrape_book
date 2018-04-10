@@ -90,3 +90,7 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 FEED_EXPORT_FIELDS = ['upc', 'name', 'price', 'stock', 'review_rating', 'review_num']
+
+ITEM_PIPELINES = {
+    'toscrapy_book.pipelines.BookPipeline': 300,
+}
